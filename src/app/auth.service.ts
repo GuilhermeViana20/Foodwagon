@@ -6,16 +6,21 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class AuthService {
-  private isAuthenticated: boolean = false;
+  private isAuthenticated: boolean = true;
 
-  login(username: string, password: string): boolean {
-    if (username === 'seu-usuario' && password === 'sua-senha') {
-      this.isAuthenticated = true;
-      return true;
-    } else {
-      this.isAuthenticated = false;
-      return false;
-    }
+  // login(username: string, password: string): boolean {
+  //   if (username === 'seu-usuario' && password === 'sua-senha') {
+  //     this.isAuthenticated = true;
+  //     return true;
+  //   } else {
+  //     this.isAuthenticated = false;
+  //     return false;
+  //   }
+  // }
+
+  login(): boolean {
+    this.isAuthenticated = true;
+    return true;
   }
 
   logout(): void {

@@ -5,30 +5,26 @@ import { GuestComponent } from './core/layouts/guest/guest.component';
 import { HomeComponent } from './features/home/home.component';
 import { AuthGuard } from './auth.guard';
 import { LoginComponent } from './features/login/login.component';
+import { GuestContentComponent } from './features/guest-content/guest-content.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: DefaultComponent,
     canActivate: [AuthGuard],
     children: [
-      // { path: 'dashboard', component: DashboardComponent },
-      // { path: 'profile', component: ProfileComponent },
-      // Outras rotas dentro do layout padrão
+      { path: '', component: HomeComponent },
     ],
   },
   {
-    path: 'guest',
+    path: '',
     component: GuestComponent,
     children: [
-      { path: '', component: HomeComponent },
+      { path: '', component: GuestContentComponent },
       { path: 'login', component: LoginComponent },
-      // { path: 'register', component: RegisterComponent },
-      // Outras rotas dentro do layout para convidados
     ],
   },
-  // Rota padrão para redirecionar
-  { path: '**', redirectTo: '/guest/login' },
+  { path: '**', redirectTo: '' },
 ];;
 
 @NgModule({

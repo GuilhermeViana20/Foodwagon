@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SharedModule } from './shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +11,7 @@ import { LoginComponent } from './features/login/login.component';
 import { HomeComponent } from './features/home/home.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { FooterComponent } from './core/components/footer/footer.component';
+import { GuestContentComponent } from './features/guest-content/guest-content.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,13 @@ import { FooterComponent } from './core/components/footer/footer.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    GuestContentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
