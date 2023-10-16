@@ -1,0 +1,142 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Lanches",
+      "image": "assets/img/gallery/lanches_HC15.png"
+    },
+    {
+      "id": 2,
+      "name": "Mercado",
+      "image": "assets/img/gallery/mercado_4RhE.png"
+    },
+    {
+      "id": 3,
+      "name": "Pizzas",
+      "image": "assets/img/gallery/pizzas_KxCO.png"
+    },
+    {
+      "id": 4,
+      "name": "Lanches",
+      "image": "assets/img/gallery/lanches_HC15.png"
+    },
+    {
+      "id": 5,
+      "name": "Mercado",
+      "image": "assets/img/gallery/mercado_4RhE.png"
+    },
+    {
+      "id": 6,
+      "name": "Pizzas",
+      "image": "assets/img/gallery/pizzas_KxCO.png"
+    },
+    {
+      "id": 7,
+      "name": "Lanches",
+      "image": "assets/img/gallery/lanches_HC15.png"
+    },
+    {
+      "id": 6,
+      "name": "Pizzas",
+      "image": "assets/img/gallery/pizzas_KxCO.png"
+    },
+    {
+      "id": 7,
+      "name": "Lanches",
+      "image": "assets/img/gallery/lanches_HC15.png"
+    }
+  ],
+  "stores": [
+    {
+      "id": 1,
+      "name": "Food World",
+      "rating": 4.2,
+      "status": "open",
+      "image": "assets/img/gallery/food-world-logo.png",
+      "banner": "assets/img/gallery/food-world.png",
+      "discount": {
+        "active": true,
+        "value": 10
+      },
+      "time": "10-20min"
+    },
+    {
+      "id": 2,
+      "name": "Pizzaria Hub",
+      "rating": 3.6,
+      "status": "open",
+      "image": "assets/img/gallery/pizzahub-logo.png",
+      "banner": "assets/img/gallery/pizza-hub.png",
+      "discount": {
+        "active": true,
+        "value": 30
+      },
+      "time": "10-20min"
+    },
+    {
+      "id": 3,
+      "name": "Subway",
+      "rating": 4.6,
+      "status": "open",
+      "image": "assets/img/gallery/donut-hut-logo.png",
+      "banner": "assets/img/gallery/donuthut.png",
+      "discount": {
+        "active": true,
+        "value": 20
+      },
+      "time": "10-20min"
+    },
+    {
+      "id": 4,
+      "name": "Food World",
+      "rating": 4.6,
+      "status": "closed",
+      "image": "assets/img/gallery/food-world-logo.png",
+      "banner": "assets/img/gallery/food-world.png",
+      "discount": {
+        "active": false,
+        "value": 0
+      },
+      "time": "10-20min"
+    },
+    {
+      "id": 5,
+      "name": "Food World",
+      "rating": 4.6,
+      "status": "closed",
+      "image": "assets/img/gallery/food-world-logo.png",
+      "banner": "assets/img/gallery/food-world.png",
+      "discount": {
+        "active": true,
+        "value": 20
+      },
+      "time": "10-20min"
+    },
+    {
+      "id": 6,
+      "name": "Food World",
+      "rating": 4.6,
+      "status": "closed",
+      "image": "assets/img/gallery/food-world-logo.png",
+      "banner": "assets/img/gallery/food-world.png",
+      "discount": {
+        "active": true,
+        "value": 20
+      },
+      "time": "10-20min"
+    },
+    {
+      "id": 7,
+      "name": "Food World",
+      "rating": 4.6,
+      "status": "closed",
+      "image": "assets/img/gallery/food-world-logo.png",
+      "banner": "assets/img/gallery/food-world.png",
+      "discount": {
+        "active": true,
+        "value": 20
+      },
+      "time": "10-20min"
+    }
+  ]
+}
