@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   public isLocation: boolean = false;
-  public isAuthenticated: boolean = false;
+  public isAuthenticated: boolean = true;
 }

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-navbar-on-scroll="data-navbar-on-scroll">
     <div class="container">
-        <a class="navbar-brand d-inline-flex" href="index.html">
+        <a class="navbar-brand d-inline-flex" [routerLink]="isAuthenticated ? ['/home'] : ['/']">
             <img class="d-inline-block" src="assets/img/gallery/logo.svg" alt="logo" />
             <span class="text-1000 fs-3 fw-bold ms-2 text-gradient">foodwagon</span>
         </a>
@@ -15,10 +15,22 @@
                 </p>
             </div>
             <form class="d-flex mt-4 mt-lg-0 ms-lg-auto ms-xl-0">
-                <div *ngIf="isAuthenticated" class="input-group-icon pe-2"><i class="fas fa-search input-box-icon text-primary"></i>
+                <div *ngIf="isAuthenticated" class="input-group-icon pe-2">
+                    <i class="fas fa-search input-box-icon text-primary"></i>
                     <input class="form-control border-0 input-box bg-100" type="search" placeholder="Buscar..." aria-label="Search" />
                 </div>
-                <button *ngIf="!isAuthenticated" class="btn btn-white shadow-warning text-warning" type="submit"> <i class="fas fa-user me-3"></i>Entrar</button>
+                <div class="d-flex align-items-center input-group-icon gap-2">
+                    <button class="btn btn-white bg-white text-dark px-3" type="submit">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                    <button class="btn btn-white bg-white text-warning px-3" type="submit">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+                <button *ngIf="!isAuthenticated" class="btn btn-white shadow-warning text-warning" type="submit" [routerLink]="['/login']">
+                    <i class="fas fa-user me-3"></i>Entrar
+                </button>
             </form>
         </div>
     </div>
