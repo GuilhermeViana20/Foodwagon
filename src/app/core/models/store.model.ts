@@ -7,6 +7,7 @@ export class Store {
     banner: string;
     discount: any;
     time: string;
+    delivery: any;
   
     constructor(
         id: number,
@@ -16,7 +17,8 @@ export class Store {
         image: string,
         banner: string,
         discount: any,
-        time: string
+        time: string,
+        delivery: any,
     ) {
       this.id = id;
       this.name = name;
@@ -26,6 +28,7 @@ export class Store {
       this.banner = banner;
       this.discount = discount;
       this.time = time;
+      this.delivery = delivery;
     }
   }
   

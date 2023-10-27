@@ -1,6 +1,11 @@
 {
   "categories": [
     {
+      "id": 0,
+      "name": "Mercado",
+      "image": "assets/img/gallery/mercado_4RhE.png"
+    },
+    {
       "id": 1,
       "name": "Lanches",
       "image": "assets/img/gallery/lanches_HC15.png"
@@ -24,16 +29,6 @@
       "id": 5,
       "name": "Mercado",
       "image": "assets/img/gallery/mercado_4RhE.png"
-    },
-    {
-      "id": 6,
-      "name": "Pizzas",
-      "image": "assets/img/gallery/pizzas_KxCO.png"
-    },
-    {
-      "id": 7,
-      "name": "Lanches",
-      "image": "assets/img/gallery/lanches_HC15.png"
     },
     {
       "id": 6,
@@ -58,7 +53,11 @@
         "active": true,
         "value": 10
       },
-      "time": "10-20min"
+      "time": "10-20min",
+      "delivery": {
+        "free": true,
+        "value": "Grátis"
+      }
     },
     {
       "id": 2,
@@ -71,7 +70,11 @@
         "active": true,
         "value": 30
       },
-      "time": "10-20min"
+      "time": "10-20min",
+      "delivery": {
+        "free": false,
+        "value": "R$ 8,99"
+      }
     },
     {
       "id": 3,
@@ -84,7 +87,11 @@
         "active": true,
         "value": 20
       },
-      "time": "10-20min"
+      "time": "10-20min",
+      "delivery": {
+        "free": true,
+        "value": "Grátis"
+      }
     },
     {
       "id": 4,
@@ -97,7 +104,11 @@
         "active": false,
         "value": 0
       },
-      "time": "10-20min"
+      "time": "10-20min",
+      "delivery": {
+        "free": true,
+        "value": "Grátis"
+      }
     },
     {
       "id": 5,
@@ -110,7 +121,11 @@
         "active": true,
         "value": 20
       },
-      "time": "10-20min"
+      "time": "10-20min",
+      "delivery": {
+        "free": true,
+        "value": "Grátis"
+      }
     },
     {
       "id": 6,
@@ -123,7 +138,11 @@
         "active": true,
         "value": 20
       },
-      "time": "10-20min"
+      "time": "10-20min",
+      "delivery": {
+        "free": true,
+        "value": "Grátis"
+      }
     },
     {
       "id": 7,
@@ -136,7 +155,11 @@
         "active": true,
         "value": 20
       },
-      "time": "10-20min"
+      "time": "10-20min",
+      "delivery": {
+        "free": true,
+        "value": "Grátis"
+      }
     }
   ]
 }

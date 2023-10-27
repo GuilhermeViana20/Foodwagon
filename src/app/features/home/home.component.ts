@@ -44,4 +44,8 @@ export class HomeComponent {
       }
     )
   }
+
+  viewProducts(id: any) {
+    console.log(id)
+  }
 }
